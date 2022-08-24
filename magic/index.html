@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Отправка формы на почту </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style0.css">
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .row {
+            background-color: aliceblue;
+            margin: 0 auto;
+            padding: 30px;
+            border: 3px solid black;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+        
+        .img {
+            background-color: black;
+            width: 400px;
+            border-radius: 20px;
+        }
+        
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="margin: 0 auto ;">
+        <div class="row">
+            <div class="img"><img src="../img/logo.png" alt=""></div>
+            <div class="col-sm-4">
+                <form action="mail.php" method="POST">
+                    <legend>Заполнение заявки</legend>
+
+                    <div class="form-group">
+                        <label for="">Введите ваше имя и фамилию</label>
+                        <input type="text" class="form-control" name="user_name" placeholder="Имя и фамилия">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Номер телефона</label>
+                        <input type="text" class="form-control" name="user_phone" placeholder="+3800000000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Введите email</label>
+                        <input type="text" class="form-control" name="user_email" placeholder="test@gmail.com">
+                    </div>
+                    <button onclick="mass()" type="submit" class="btn btn-primary">Заказать услугу</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        function mass() {
+            alert('Спасибо за то что оставили заявку, мы с вами свяжемся в течении дня, Слава Украине!')
+        }
+    </script>
+</body>
+
+</html>

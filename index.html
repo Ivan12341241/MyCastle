@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Castle</title>
+    <link rel="stylesheet" href="css/style0.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body id="app" class="light" style="transition: .2s;">
+    <div class='preloader preloader1'></div>
+    <div class='preloader preloader2'></div>
+    <div class='preloader preloader3'></div>
+    <div class='preloader preloader4'></div>
+    <div class='preloader preloader5'></div>
+    <div class="my_castle">
+        <div class="top_content matovoye_steklo">
+            <h3 class="h3text style_type"><a href="index.html">My Castle</a></h3>
+            <div class="panel">
+                <div class="panel_butt">
+                    <span class="text_butt_nav matovoye_steklo_butt matovoye_steklo nav1">Menu</span>
+                    <div class="pos text_li_style" id="list1" style="display: none;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </div>
+                </div>
+                <div class="menu">
+                    <span id="theme-toggle" class="matovoye_steklo_butt matovoye_steklo nav2">
+                        🌟
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="slaider" class="pos_slider">
+            <div class="matovoye_steklo">
+                <div class="slider">
+                    <div class="item logo_item">
+                        <div class="slidelogo_img_size">
+                            <img src="img/logo.png" alt="Третий слайд" class='imgag'>
+                        </div>
+                        <div class="slideText logo_text">
+
+                            <span>Страхова Агенція <span class="txt_logo"><br>My Castle<br></span>Мій дім - Моя фортеця!</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img1.jpg" alt="Первый слайд">
+                        <div class="slideText">Более 1000 новых клиентов</div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/img2.jpg" alt="Второй слайд">
+                        <div class="slideText">За<span id="date_info_list"></span>лет мы защищаем уже 234523 пользователей</div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/img3.jpg" alt="Третий слайд">
+                        <div class="slideText">Бонус на оформление докуметов в
+                            <br>День Независимости длится к 15 сентября на целых 45%!</div>
+                    </div>
+
+
+                    <a class="prev matovoye_steklo matovoye_steklo_butt" onclick="minusSlide()">&#10094;</a>
+                    <a class="next matovoye_steklo matovoye_steklo_butt" onclick="plusSlide()">&#10095;</a>
+                </div>
+
+                <div class="slider-dots">
+                    <span class="slider-dots_item matovoye_steklo_butt" onclick="currentSlide(1)"></span>
+                    <span class="slider-dots_item matovoye_steklo_butt" onclick="currentSlide(2)"></span>
+                    <span class="slider-dots_item matovoye_steklo_butt" onclick="currentSlide(3)"></span>
+                    <span class="slider-dots_item matovoye_steklo_butt" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="info_panel matovoye_steklo">
+            <h1>Почему мы?</h1>
+            <div class="info_wall info_style">
+                <div class="info_img">
+                    <img src="img/mon.png" alt="">
+                </div>
+                <div class="info_text">
+                    Наша страховая агенция предоставляет защиту вашему дому оберегая от несчастных случаев за хорошую цену! Выдача помощи проводится до 3 дней после предоставления нужных документов нашим сотрудникам.
+                </div>
+            </div>
+            <div class="info_wall info_rev info_style">
+                <div class="info_img">
+                    <img src="img/download.png" alt="">
+                </div>
+                <div class="info_text">
+                    Мы уважаем право на защиту конфиденциальной информации нашего клиента, вся ваша информация надёжно хранится в нашей базе данных. Защита важнее всего!
+                </div>
+            </div>
+            <div class="info_wall info_style">
+                <div class="info_img">
+                    <img src="img/images.png" alt="">
+                </div>
+                <div class="info_text">
+                    Наш второй слоган<br>-"Бытро и качественно!"<br> По этому оформление документов у вас займёт до 10 минут вашего времени!
+                </div>
+            </div>
+            <a href="magic/index.html"><button  class='matovoye_steklo_butt matovoye_steklo butt_style'>Оставить заявку</button></a>
+        </div>
+        <div class="footer matovoye_steklo matovoye_steklo_butt">
+            <div>
+                <span id="start_year">2015-</span><span id='date'></span>
+            </div>
+            <div id="date_show_info" style="display: none;">
+                С вами уже<span id="date_info"></span>лет
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
