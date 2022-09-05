@@ -35,6 +35,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    header('location: ../index.html');
+    header('location: ../good.html');
 }
 ?>

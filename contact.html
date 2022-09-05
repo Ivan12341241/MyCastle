@@ -8,6 +8,7 @@
     <title>Contacts</title>
     <link rel="stylesheet" href="css/style0.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/fv.ico" />
 
 </head>
 
@@ -25,28 +26,22 @@
                     <span class="text_butt_nav matovoye_steklo_butt matovoye_steklo nav1">Menu</span>
                     <div class="pos text_li_style" id="list1" style="display: none;">
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="calc.html">Calculator</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contacts</a></li>
                     </div>
                 </div>
                 <div class="menu">
-                    <span id="theme-toggle" class="matovoye_steklo_butt matovoye_steklo nav2">
-                        🌟
-                    </span>
+                    <span id="theme-toggle" class="matovoye_steklo_butt matovoye_steklo nav2 info_img">
+                        <img src="img/icon.png" alt="" class="img_inf">
+                      </span>
                 </div>
             </div>
         </div>
-
-        <div class="info_panel pos_news">
+        <div class="info_panel pos_news matovoye_steklo">
             <h1>Contacts</h1>
             <div class="contacts">
-                <div class="maps">
-                    <h1 class="h3text">Карта:</h1>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d8815.111485076102!2d30.49251119379761!3d50.50657244926439!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x40d4d272b0c018a3%3A0x474ff127170452f0!2zM1YsINGD0LsuINCc0LDRgNGI0LDQu9CwINCi0LjQvNC-0YjQtdC90LrQviwgM9CSLCDQmtC40LXQsiwgMDIwMDA!3m2!1d50.5081205!2d30.4885263!5e1!3m2!1sru!2sua!4v1661349154199!5m2!1sru!2sua"
-                        max-width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-                <div class="contact">
+                <div class="contact" id="contact">
 
                     <ul>
                         <h3 class="h3text">Контакты офиса:</h3>
@@ -68,6 +63,8 @@
                         <li class="matovoye_steklo_butt"><a href="#">my_castle@gmail.com</a></li>
                         <li class="matovoye_steklo_butt"><a href="#">my_castle@i.ua</a></li>
                     </ul>
+
+                    <div style="width: 300px; padding:20px; cursor: pointer;" class="h3text matovoye_steklo matovoye_steklo_butt" onclick="printt()">Печать...</div>
                 </div>
             </div>
         </div>
@@ -82,6 +79,11 @@
         </div>
     </div>
     <script src="js/contact.js"></script>
+    <script>
+        function printt() {
+            window.print();
+        }
+    </script>
 
 </body>
 

@@ -5,36 +5,22 @@
             box-sizing: border-box;
         }
         
-        .light {
-            background-color: rgba(0, 0, 0, 0.128);
+        body {
+            background-color: rgb(232, 232, 232);
         }
         
         .dark {
             background-color: rgba(0, 0, 0, 0.779);
         }
         
-        .light .matovoye_steklo {
-            background-color: rgba(255, 255, 255, 0.555);
-        }
-        
         .dark .matovoye_steklo {
-            background-color: rgba(174, 174, 174, 0.303);
-        }
-        
-        link .text_li_style>li {
-            background-color: rgba(255, 255, 255, 0.555);
-            box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.2);
+            background-color: rgba(74, 74, 74, 0.779);
         }
         
         .dark .text_li_style>li {
-            background-color: rgba(174, 174, 174, 0.303);
+            background-color: rgba(74, 74, 74, 0.303);
             box-shadow: 5px 5px 6px 1px rgba(109, 109, 109, 0.2);
             color: aliceblue;
-        }
-        
-        .link .text_li_style>li:hover {
-            background-color: rgba(255, 255, 255, 0.773);
-            box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.534);
         }
         
         .dark .text_li_style>li:hover {
@@ -42,17 +28,8 @@
             color: #000;
         }
         
-        .light .style_type {
-            color: rgb(35, 35, 35);
-        }
-        
         .dark .style_type {
             color: aliceblue;
-        }
-        
-        .light .nav1,
-        .light .nav2 {
-            color: #000;
         }
         
         .dark .nav1,
@@ -64,17 +41,9 @@
             transform: rotate(360deg);
         }
         
-        .light .matovoye_steklo_butt:hover {
-            color: #000;
-        }
-        
         .dark .matovoye_steklo_butt:hover {
             color: #000;
             box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.534);
-        }
-        
-        .light .slider-dots_item {
-            background-color: rgba(255, 255, 255, 0.864);
         }
         
         .dark .slider-dots_item {
@@ -82,26 +51,13 @@
             margin: 0 4px;
         }
         
-        .light .slider,
-        .light .next {
-            color: #000;
-        }
-        
         .dark .slider,
         .dark .next {
             color: aliceblue;
         }
         
-        .light .info_panel {
-            color: #000;
-        }
-        
         .dark .info_panel {
             color: aliceblue;
-        }
-        
-        .link .footer {
-            color: #000;
         }
         
         .dark .footer {
@@ -119,6 +75,16 @@
             filter: invert(0%);
         }
         
+        .dark .info_img>.img_inf {
+            border-radius: 20px;
+            filter: invert(0%);
+        }
+        
+        .info_img>.img_inf {
+            border-radius: 20px;
+            filter: invert(100%);
+        }
+        
         .dark .txt_logo {
             border-bottom: 2px solid aliceblue;
         }
@@ -126,6 +92,15 @@
         .dark .logo_text {
             color: aliceblue;
             border: none;
+        }
+        
+        .dark .form {
+            background-color: rgba(0, 0, 0, 0.386);
+        }
+        
+        .dark .row {
+            background-color: rgba(0, 0, 0, 0.494);
+            color: aliceblue;
         }
         
         .nav2 {
@@ -145,12 +120,11 @@
         
         .matovoye_steklo {
             width: 1000px;
-            background-color: rgba(255, 255, 255, 0.555);
+            background-color: rgba(255, 255, 255, 0.884);
             box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.2);
             border-radius: 3px;
             overflow: hidden;
             margin: 5px;
-            backdrop-filter: blur(8px);
         }
         
         .matovoye_steklo_butt {
@@ -184,6 +158,49 @@
         
         .panel {
             display: flex;
+        }
+        
+        .col {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
+        .col>.button_calc {
+            display: flex;
+            align-items: center;
+        }
+        
+        .col>.button_calc>button {
+            width: 70px;
+            height: 310px;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: aliceblue;
+            color: #000;
+            font-size: 35px;
+            margin: 40px 0 0 20px;
+        }
+        
+        .calc {
+            padding: 40px 0 0;
+        }
+        
+        .calc>p>input {
+            width: 200px;
+            font-size: 24px;
+            padding: 6px;
+            border: none;
+            background-color: aliceblue;
+            border-radius: 10px;
+            border-bottom: 1px solid black;
+        }
+        
+        .calc>p {
+            width: auto;
+            margin: 10px 0;
+            font-size: 24px;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
         }
         
         .h3text {
@@ -228,8 +245,9 @@
             cursor: pointer;
             margin: 3px 6px;
             padding: 7px 10px;
-            font-size: 1em;
+            font-size: 1.3em;
             transition: .2s;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
         }
         
         .text_li_style>li:hover {
@@ -244,6 +262,7 @@
             width: 80px;
             height: 45px;
             align-items: center;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
         }
         
         .imgag {
@@ -419,6 +438,7 @@
         }
         
         .info_wall {
+            flex-wrap: wrap;
             align-items: center;
             display: flex;
             justify-content: space-around;
@@ -431,8 +451,8 @@
         }
         
         .info_img {
-            width: 185px;
             margin-right: 10px;
+            filter: invert(0%);
         }
         
         .info_img>img {
@@ -440,7 +460,7 @@
         }
         
         .info_text {
-            font-size: 1.375em;
+            font-size: 18px;
             width: 450px;
             font-family: 'Edu VIC WA NT Beginner', cursive;
             font-weight: 600;
@@ -540,7 +560,7 @@
         
         .contacts {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
         }
         
@@ -566,7 +586,7 @@
             border: none;
             cursor: pointer;
             font-size: 24px;
-            transform: .1s;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
         }
         
         .dark .butt_style {
@@ -601,10 +621,10 @@
             }
             .top_content {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
             }
             .pos_slider {
-                padding-top: 148px;
+                padding-top: 110px;
                 display: flex;
                 height: 515px;
                 width: 100%;
@@ -622,7 +642,7 @@
         
         @media screen and (max-width: 665px) {
              :root {
-                font-size: calc(4.5px + 7.5px + 1.875px);
+                font-size: calc(4px + 7px + 1.875px);
             }
             .slidelogo_img_size img {
                 display: none;
@@ -638,7 +658,7 @@
                 font-size: 24px;
             }
              :root {
-                font-size: calc(4.5px + 7.5px + 1.875px);
+                font-size: calc(3.5px + 6.5px + 1.875px);
             }
             .text_li_style {
                 display: flex;
@@ -647,5 +667,20 @@
             .panel_butt {
                 display: flex;
                 flex-direction: column;
+            }
+            .col {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            .col>.button_calc>button {
+                width: 310px;
+                height: 70px;
+                cursor: pointer;
+                border-radius: 20px;
+                background-color: aliceblue;
+                color: #000;
+                font-size: 35px;
+                margin: 0;
             }
         }

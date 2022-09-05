@@ -8,10 +8,12 @@
     <title>My Castle</title>
     <link rel="stylesheet" href="css/style0.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/fv.ico" />
 
 </head>
 
 <body id="app" class="light" style="transition: .2s;">
+
     <div class='preloader preloader1'></div>
     <div class='preloader preloader2'></div>
     <div class='preloader preloader3'></div>
@@ -25,14 +27,15 @@
                     <span class="text_butt_nav matovoye_steklo_butt matovoye_steklo nav1">Menu</span>
                     <div class="pos text_li_style" id="list1" style="display: none;">
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="calc.html">Calculator</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contacts</a></li>
                     </div>
                 </div>
                 <div class="menu">
-                    <span id="theme-toggle" class="matovoye_steklo_butt matovoye_steklo nav2">
-                        🌟
-                    </span>
+                    <span id="theme-toggle" class="matovoye_steklo_butt matovoye_steklo nav2 info_img">
+                        <img src="img/icon.png" alt="" class="img_inf">
+                      </span>
                 </div>
             </div>
         </div>
@@ -45,7 +48,7 @@
                         </div>
                         <div class="slideText logo_text">
 
-                            <span>Страхова Агенція <span class="txt_logo"><br>My Castle<br></span>Мій дім - Моя фортеця!</span>
+                            <span>Страховая Агенция <span class="txt_logo"><br>My Castle<br></span>Мой дом - Моя крепость!</span>
                         </div>
                     </div>
                     <div class="item">
@@ -103,7 +106,7 @@
                     Наш второй слоган<br>-"Бытро и качественно!"<br> По этому оформление документов у вас займёт до 10 минут вашего времени!
                 </div>
             </div>
-            <a href="magic/index.html"><button  class='matovoye_steklo_butt matovoye_steklo butt_style'>Оставить заявку</button></a>
+            <div id="butt_form"><button class='matovoye_steklo_butt matovoye_steklo butt_style' onclick="butt_window()">Оставить заявку</button></div>
         </div>
         <div class="footer matovoye_steklo matovoye_steklo_butt">
             <div>
